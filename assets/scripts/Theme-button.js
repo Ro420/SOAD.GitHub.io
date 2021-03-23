@@ -45,8 +45,6 @@ function mouseEnterBlack() {
   if (activeTheme === whiteTheme) {
     document.body.classList.remove(whiteThemeClass);
     document.body.classList.add(blackThemeClass);
-    document.footer.classList.remove(blackFooterClass);
-    document.footer.classList.add(whiteFooterClass);
   }
 }
 
@@ -54,8 +52,6 @@ function mouseOutBlack() {
   if (activeTheme === whiteTheme) {
     document.body.classList.remove(blackThemeClass);
     document.body.classList.add(whiteThemeClass);
-    document.footer.classList.remove(whiteFooterClass);
-    document.footer.classList.add(blackFooterClass);
   }
 }
 
@@ -74,8 +70,6 @@ function mouseEnterWhite() {
   if (activeTheme === blackTheme) {
     document.body.classList.remove(blackThemeClass);
     document.body.classList.add(whiteThemeClass);
-    document.footer.classList.remove(whiteFooterClass);
-    document.footer.classList.add(blackFooterClass);
   }
 }
 
@@ -83,8 +77,6 @@ function mouseOutWhite() {
   if (activeTheme === blackTheme) {
     document.body.classList.remove(whiteThemeClass);
     document.body.classList.add(blackThemeClass);
-    document.footer.classList.remove(blackFooterClass);
-    document.footer.classList.add(whiteFooterClass);
   }
 }
 
