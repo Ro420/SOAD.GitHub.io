@@ -32,7 +32,7 @@ body.whiteTheme {
 
 .mainBox {
   width: 100%;
-  height: 1230px;
+  height: 1690px;
 }
 
 .my-name {
@@ -132,7 +132,7 @@ img:hover {
 }
 
 .column {
-  flex: 25%;
+  flex: 32%;
   max-width: 25%;
   padding: 0 4px;
 }
@@ -157,19 +157,11 @@ img:hover {
   }
 }
 
-footer.blackFooter {
-  background-color: #000000;
-}
-
-footer.whiteFooter {
-  background-color: #ffffff;
-}
-
 .footerBox {
   display: fixed;
   text-align: center;
   position: sticky;
-  height: 170px;
+  height: 200px;
 }
 
 .footerText {
