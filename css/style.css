@@ -32,27 +32,39 @@ body.whiteTheme {
 
 .mainBox {
   width: 100%;
+  height: 100%;
   height: 1690px;
+}
+
+.header {
+  padding: 100px;
+  background-image: url('Galaxy\ Stars\ Wide.jpg');
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .my-name {
   text-align: right;
-  font-family: 'Indie Flower', sans-serif;;
+  font-family: 'Indie Flower', sans-serif;
   font-size: 69px;
   margin: 13px 23px;
   font-weight: bold;
   letter-spacing: 3px;
   text-shadow: 1px 1px;
+  color: rgb(255,255,255);
 }
 
 .my-prof {
   text-align: right;
-  font-family: 'Architects Daughter', sans-serif;;
+  font-family: 'Architects Daughter', sans-serif;
   font-size: 32px;
   margin: 13px 23px;
   font-weight: bold;
   letter-spacing: 3px;
   text-shadow: 1px 1px;
+  color: rgb(255,255,255);
 }
 
 .tab {
@@ -120,7 +132,6 @@ body.whiteTheme {
 
 img {
   transition: 0.3s ease-in-out;
-  transition: filter .3s ease-in-out;
   filter: grayscale(100%);
 }
 
@@ -162,18 +173,29 @@ img:hover {
 }
 
 .footerBox {
-  display: fixed;
-  text-align: center;
-  position: sticky;
-  height: 200px;
+  height: 230px;
+  background-color: aqua;
+
 }
 
-.footerText {
+.footerYearBox {
+  height: 69px;
+  bottom: 0px;
+}
+
+.footerYear {
   bottom: 0px;
   text-align: center;
+  padding: 32px 0px 0px 0px;
+  font-family: 'Balsamiq Sans', cursive;
 }
 
-.flip-box {
+.footerQuestion {
+  font-family: 'Indie Flower', sans-serif;
+  font-size: 69px;
+}
+
+/*  .flip-box {
   background-color: transparent;
   width: 230px;
   height: 69px;
@@ -211,12 +233,4 @@ img:hover {
   background-color: dodgerblue;
   color: white;
   transform: rotateX(180deg);
-}
-
-.bg {
-  background-image: url("Galaxy Wide Background.jpg");
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+} */
