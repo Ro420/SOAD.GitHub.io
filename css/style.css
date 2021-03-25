@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: 'Red Hat Text', Verdana, Georgia, sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Verdana, Georgia, sans-serif;
   transition: background-color 0.3s ease-in-out;
   height: 100%;
   margin: 0;
@@ -37,18 +37,22 @@ body.whiteTheme {
 
 .my-name {
   text-align: right;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Indie Flower', sans-serif;;
   font-size: 69px;
   margin: 13px 23px;
   font-weight: bold;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px;
 }
 
 .my-prof {
   text-align: right;
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Architects Daughter', sans-serif;;
   font-size: 32px;
   margin: 13px 23px;
   font-weight: bold;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px;
 }
 
 .tab {
@@ -132,8 +136,8 @@ img:hover {
 }
 
 .column {
-  flex: 25%;
-  max-width: 25%;
+  flex: 23%;
+  max-width: 32%;
   padding: 0 4px;
 }
 
@@ -155,26 +159,6 @@ img:hover {
     flex: 100%;
     max-width: 100%;
   }
-}
-
-footer.blackFooter {
-  background-color: #000000;
-}
-
-footer.whiteFooter {
-  background-color: #ffffff;
-}
-
-.footerBox {
-  display: fixed;
-  text-align: center;
-  position: sticky;
-  height: 170px;
-}
-
-.footerText {
-  bottom: 0px;
-  text-align: center;
 }
 
 .flip-box {
@@ -215,4 +199,12 @@ footer.whiteFooter {
   background-color: dodgerblue;
   color: white;
   transform: rotateX(180deg);
+}
+
+.bg {
+  background-image: url("Galaxy Wide Background.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
