@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
   font-family: 'Red Hat Text', Verdana, Georgia, sans-serif;
   scroll-behavior: smooth;
 }
@@ -22,6 +22,7 @@ body .footer {
   position: relative;
   grid-area: footer;
   min-height: 13rem;
+  top: 2300px;
 }
 body .footer .bubbles {
   position: absolute;
@@ -44,8 +45,6 @@ body .footer .content {
   z-index: 2;
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-gap: 4rem;
-  padding: 2rem;
   background: var(--footer-background);
 }
 body .footer .content a, body .footer .content p {
@@ -79,8 +78,24 @@ body .footer .content > div .image {
   background-position: center;
 }
 
+.contentText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  position: absolute;
+  left: 230px;
+  top: 32px;
+}
+
+.contentLinks {
+  position: fixed;
+  left: 50px;
+  top: 230px;
+}
+
 @keyframes bubble-size {
-  0%, 69% {
+  0%, 75% {
     width: var(--size, 4rem);
     height: var(--size, 4rem);
   }
@@ -120,7 +135,7 @@ body.whiteTheme {
 .mainBox {
   width: 100%;
   height: 100%;
-  height: 2300px;
+  height: 2200px;
 }
 
 .header {
@@ -155,7 +170,7 @@ body.whiteTheme {
 }
 
 .tab {
-  position: fixed;
+  position: absolute;
   float: left;
   border: 0px solid rgb(255, 0, 0);
   width: 13%;
@@ -204,7 +219,7 @@ body.whiteTheme {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: darkviolet;
+  background-color: rgb(128, 128, 128);
   color: inherit;
   cursor: pointer;
   padding: 13px;
@@ -235,7 +250,7 @@ img:hover {
 
 .column {
   flex: 32%;
-  max-width: 25%;
+  max-width: 23%;
   padding: 0 4px;
 }
 
