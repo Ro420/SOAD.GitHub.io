@@ -1,5 +1,5 @@
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
   font-family: 'Red Hat Text', Verdana, Georgia, sans-serif;
   scroll-behavior: smooth;
 }
@@ -7,12 +7,7 @@
 body {
   font-family: 'Montserrat', Verdana, Georgia, sans-serif;
   transition: background-color 0.3s ease-in-out;
-  height: 100%;
   margin: 0;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  grid-template-areas: "main" "footer";
-  min-height: 100vh;
 }
 
 body .footer {
@@ -22,7 +17,7 @@ body .footer {
   position: relative;
   grid-area: footer;
   min-height: 13rem;
-  top: 2300px;
+  width: 100%;
 }
 body .footer .bubbles {
   position: absolute;
@@ -32,6 +27,7 @@ body .footer .bubbles {
   height: 1rem;
   background: var(--footer-background);
   filter: url("#blob");
+  width: calc(100% - 3px);
 }
 body .footer .bubbles .bubble {
   position: absolute;
@@ -43,8 +39,6 @@ body .footer .bubbles .bubble {
 }
 body .footer .content {
   z-index: 2;
-  display: grid;
-  grid-template-columns: 1fr auto;
   background: var(--footer-background);
 }
 body .footer .content a, body .footer .content p {
@@ -79,19 +73,11 @@ body .footer .content > div .image {
 }
 
 .contentText {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  position: absolute;
-  left: 230px;
-  top: 32px;
+
 }
 
 .contentLinks {
-  position: fixed;
-  left: 50px;
-  top: 230px;
+
 }
 
 @keyframes bubble-size {
