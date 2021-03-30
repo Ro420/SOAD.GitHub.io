@@ -37,33 +37,33 @@ body .footer .bubbles .bubble {
   animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
   transform: translate(-50%, 100%);
 }
-body .footer .content {
+body .footer .social {
   z-index: 2;
   background: var(--footer-background);
 }
-body .footer .content a, body .footer .content p {
+body .footer .social a, body .footer .social p {
   color: #F5F7FA;
   text-decoration: none;
 }
-body .footer .content b {
+body .footer .social b {
   color: white;
 }
-body .footer .content p {
+body .footer .social p {
   margin: 0;
   font-size: 0.75rem;
 }
-body .footer .content > div {
+body .footer .social > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body .footer .content > div > div {
+body .footer .social > div > div {
   margin: 0.25rem 0;
 }
-body .footer .content > div > div > * {
+body .footer .social > div > div > * {
   margin-right: 0.5rem;
 }
-body .footer .content > div .image {
+body .footer .social > div .image {
   align-self: center;
   width: 4rem;
   height: 4rem;
@@ -72,11 +72,11 @@ body .footer .content > div .image {
   background-position: center;
 }
 
-.contentText {
+.socialText {
 
 }
 
-.contentLinks {
+.socialLinks {
 
 }
 
@@ -218,13 +218,16 @@ body.whiteTheme {
 }
 
 img {
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
 
 img:hover {
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  object-fit: cover;
 }
 
 .row {
