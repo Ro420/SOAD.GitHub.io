@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
-  font-family: 'Red Hat Text', Verdana, Georgia, sans-serif;
+  font-family: 'Red Hat Text', 'Give You Glory', Verdana, Georgia, sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Montserrat', Verdana, Georgia, sans-serif;
+  font-family: 'Montserrat', 'Give You Glory', Verdana, Georgia, sans-serif;
   transition: background-color 0.3s ease-in-out;
   margin: 0;
 }
@@ -73,7 +73,7 @@ body .footer .social > div .image {
 }
 
 .socialText {
-
+  font-family: 'Give You Glory', cursive;
 }
 
 .socialLinks {
