@@ -99,7 +99,26 @@
         </div>
       </div>
 
-      <div id="About" class="tabcontent"></div>
+      <div id="About" class="tabcontent">
+        <header class="calculatorHeader">
+          <h1>The calculator</h1>
+        </header>
+
+        <section id="calculator" class="calculatorSection">
+          <input type="number" id="input-number" />
+          <div id="calc-actions">
+            <button type="button" id="btn-add">+</button>
+            <button type="button" id="btn-subtract">-</button>
+            <button type="button" id="btn-multiply">*</button>
+            <button type="button" id="btn-divide">/</button>
+          </div>
+        </section>
+
+        <section id="results" class="calculatorResult">
+          <h2 id="current-calculation">0</h2>
+          <h2>Result: <span id="current-result">0</span></h2>
+        </section>
+      </div>
     </div>
 
     <button onclick="topFunction()" id="goToTopButton" title="Go to top">
@@ -108,25 +127,6 @@
 
     <script src="assets/scripts/TabPanel.js"></script>
     <script src="assets/scripts/GoToTopButton.js"></script>
-
-    <header>
-      <h1>The calculator</h1>
-    </header>
-
-    <section id="calculator">
-        <input type="number" id="input-number" />
-        <div id="calc-actions">
-            <button type="button" id="btn-add">+</button>
-            <button type="button" id="btn-subtract">-</button>
-            <button type="button" id="btn-multiply">*</button>
-            <button type="button" id="btn-divide">/</button>
-        </div>
-    </section>
-
-    <section id="results">
-        <h2 id="current-calculation">0</h2>
-        <h2>Result: <span id="current-result">0</span></h2>
-    </section>  -->
 
     <!-- <div class="flip-box">
       <div class="flip-box-inner">
@@ -1346,7 +1346,7 @@
       </div>
       <div class="social">
         <div>
-          <div class="socialText"><h2>Want to work with me?</h2></div>
+          <div class="socialText"><h1 class="socialTextInfo">Want to work with me?</h1></div>
           <div class="socialLinks">
             <a href="https://www.instagram.com/iuliiamart3/" target="_blank"
               ><i class="fa fa-instagram"></i
@@ -1356,8 +1356,9 @@
             <a href="https://www.facebook.com/ju2369" target="_blank"
               ><i class="fa fa-facebook"></i
             ></a>
+          <div class="socialYear">
+          <p class="socialYearInfo">©2021</p>
           </div>
-          <p class="socialYear">©2021</p>
         </div>
       </div>
     </div>

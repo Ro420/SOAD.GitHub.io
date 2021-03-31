@@ -73,11 +73,26 @@ body .footer .social > div .image {
 }
 
 .socialText {
+  position: relative;
+}
+
+.socialTextInfo {
   font-family: 'Give You Glory', cursive;
+  text-align: center;
 }
 
 .socialLinks {
+  position: relative;
+  font-family: 'Give You Glory', cursive;
+}
 
+.socialYear {
+  position: relative;
+  text-align: center;
+}
+
+.socialYearInfo {
+  font-size: 69px;
 }
 
 @keyframes bubble-size {
@@ -155,11 +170,9 @@ body.whiteTheme {
 }
 
 .tab {
-  position: absolute;
-  float: left;
+  position: fixed;
+  top: 169px;
   border: 0px solid rgb(255, 0, 0);
-  width: 13%;
-  height: 230px;
   transition: 0.3s ease-in-out;
 }
 
@@ -188,10 +201,9 @@ body.whiteTheme {
 }
 
 .tabcontent {
-  float: left;
   padding: 23px 13px;
   width: 93%;
-  border-left: none;
+  border-left: line;
   height: 100%;
   transition: 0.3s ease-in-out;
 }
@@ -260,6 +272,11 @@ img:hover {
     flex: 100%;
     max-width: 100%;
   }
+}
+
+.calculatorHeader, .calculatorSection, .calculatorResult {
+  position: relative;
+  left: 230px;
 }
 
 /* .flip-box {
