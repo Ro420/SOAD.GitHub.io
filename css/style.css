@@ -158,6 +158,10 @@ li .socialItem {
   margin-right: 69px;
 }
 
+.socialSites {
+  padding-inline-end: 23px;
+}
+
 .socialBot {
   margin-top: -20px;
 }
