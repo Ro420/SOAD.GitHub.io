@@ -32,7 +32,6 @@
     <script src="assets/scripts/Theme-button.js" defer></script>
     <script src="assets/scripts/second-script.js" defer></script>
     <script src="assets/scripts/first-script.js" defer></script>
-    <script src="assets/scripts/HeroImage.js"></script>
   </head>
 
   <body>
@@ -42,20 +41,33 @@
     </header>
 
     <nav>
-      <button
-        class="tablinks"
-        onclick="openCity(event, 'Main')"
-        id="defaultOpen"
-      >
+      <a href="#" class="tablinks"
+      onclick="openCity(event, 'Main')"
+      id="defaultOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
         Main
-      </button>
-      <button class="tablinks" onclick="openCity(event, 'Projects')">
+      </a>
+      <a href="#" class="tablinks" onclick="openCity(event, 'Projects')">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
         Projects
-      </button>
-      <button class="tablinks" onclick="openCity(event, 'About')">
+      </a>
+      <a href="#" class="tablinks" onclick="openCity(event, 'About')">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
         About
-      </button>
+      </a>
     </nav>
+
+
+
 
     <div class="mainBox">
       <svg class="theme-button" width="25" height="25">
@@ -75,7 +87,9 @@
 
 
       <div id="Main" class="tabcontent">
-        asdflaslfaslfaslfals
+        <div class="progress">
+          <div class="progress-value"></div>
+        </div>
       </div>
 
       <div id="Projects" class="tabcontent">

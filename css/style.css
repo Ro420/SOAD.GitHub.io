@@ -195,33 +195,121 @@ nav {
   grid-area: nav;
   position: sticky;
   height: min-content;
-  top: 200px;
+  top: 100px;
   border: 0px solid rgb(255, 0, 0);
   transition: 0.3s ease-in-out;
 }
 
-nav button {
-  display: block;
-  background-color: inherit;
-  color: inherit;
-  padding: 23px 23px;
+nav a {
+  padding: 20px 20px;
   width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
+  text-align: center;
   transition: 0.3s ease-in-out;
-  font-size: 32px;
+  font-size: 23px;
+  margin-bottom: 23px;
+  margin-left: 5px;
 }
 
-nav button:hover {
-  opacity: 50%;
-  transition: 0.3s ease-in-out;
+a{
+  position: relative;
+  display: inline-block;
+  padding: 23px 23px;
+  color: #ff0000;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-right: 50px;
+ 
+}
+a:hover{
+  background: #ff0000;
+  color: #050801;
+  box-shadow: 0 0 5px #ff0000,
+              0 0 25px #ff0000,
+              0 0 50px #ff0000,
+              0 0 200px #ff0000;
+   -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+a:nth-child(1){
+  filter: hue-rotate(270deg);
+}
+a:nth-child(2){
+  filter: hue-rotate(110deg);
+}
+a span{
+  position: absolute;
+  display: block;
+}
+a span:nth-child(1){
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#ff0000);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+  0%{
+      left: -100%;
+  }
+  50%,100%{
+      left: 100%;
+  }
+}
+a span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#ff0000);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2{
+  0%{
+      top: -100%;
+  }
+  50%,100%{
+      top: 100%;
+  }
+}
+a span:nth-child(3){
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#ff0000);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.50s;
+}
+@keyframes animate3{
+  0%{
+      right: -100%;
+  }
+  50%,100%{
+      right: 100%;
+  }
 }
 
-nav button.active {
-  color: darkviolet;
-  transition: 0.3s ease-in-out;
+
+a span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#ff0000);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4{
+  0%{
+      bottom: -100%;
+  }
+  50%,100%{
+      bottom: 100%;
+  }
 }
 
 .tabcontent {
@@ -260,6 +348,7 @@ img:hover {
   transition: all 0.3s ease-in-out;
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
+
 }
 
 .row {
@@ -302,42 +391,30 @@ img:hover {
   }
 }
 
-/* .flip-box {
-  background-color: transparent;
-  width: 230px;
-  height: 69px;
-  border: 0px solid #f1f1f1;
-  perspective: 1000px;
-}
-
-.flip-box-inner {
+.progress {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
   position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 500px;
 }
 
-.flip-box:hover .flip-box-inner {
-  transform: rotateX(180deg);
+.progress-value {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background:#8d0fc7;
+  ;
+  height: 30px;
+  width: 0;
 }
 
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 68%; }
 }
 
-.flip-box-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-box-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateX(180deg);
-} */
