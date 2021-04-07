@@ -408,9 +408,11 @@ img:hover {
 }
 
 .row {
+  display: -ms-flexbox; /* IE10 */
   display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  gap: 1em;
+  padding: 0 4px;
 }
 
 .row > img {
@@ -422,6 +424,7 @@ img:hover {
 }
 
 .column {
+  -ms-flex: 32%; /* IE10 */
   flex: 32%;
   max-width: 23%;
   padding: 0 4px;
@@ -435,6 +438,7 @@ img:hover {
 
 @media screen and (max-width: 800px) {
   .column {
+    -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
   }
@@ -442,6 +446,7 @@ img:hover {
 
 @media screen and (max-width: 600px) {
   .column {
+    -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
   }
