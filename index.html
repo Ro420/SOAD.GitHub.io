@@ -41,6 +41,7 @@
       <p class="my-prof">Freelance designer</p>
     </header>
 
+    <!-- Navigation Bar -->
     <nav>
       <a href="#" class="tablinks"
       onclick="openCity(event, 'Main')"
@@ -66,10 +67,9 @@
         About
       </a>
     </nav>
+    <!-- Navigation Bar -->
 
-
-
-
+    <!-- Main Content -->
     <div class="mainBox">
       <svg class="theme-button" width="25" height="25">
         <polygon
@@ -85,27 +85,9 @@
         />
       </svg>
 
+      <section id="Main" class="tabcontent">
 
-
-      <div id="Main" class="tabcontent">
-
-      </div>
-
-      <div id="Projects" class="tabcontent">
-        <div class="row">
-            <img src="img/Ro+Crow.png"/>
-            <img src="img/Poster 3.jpg"/>
-            <img src="img/Niggerian Woman.jpg"/>
-            <img src="img/Poster 2.jpg"/>
-            <img src="img/Poster 1.png"/>
-            <img src="img/Orange Cup.jpg"/>
-            <img src="img/Utopia.jpg"/>
-            <img src="img/Prisma Triangle.jpg"/>
-
-        </div>
-      </div>
-
-      <div id="About" class="tabcontent">
+        <!-- The Calculator -->
         <header class="calculatorHeader">
           <h1>The calculator</h1>
         </header>
@@ -124,8 +106,41 @@
           <h2 id="current-calculation">0</h2>
           <h2>Result: <span id="current-result">0</span></h2>
         </section>
+        <!-- The Calculator -->
+
+      </section>
+
+    <div id="Projects" class="tabcontent">
+
+        <!-- Photo Grid -->
+      <div class="row"> 
+        <div class="column">
+          <img src="img/Ro+Crow.png" style="width:100%"/>
+          <img src="img/Poster 3.jpg" style="width:100%"/>
+        </div>
+        <div class="column">
+          <img src="img/Prisma Triangle.jpg" style="width:100%"/>
+          <img src="img/Niggerian Woman.jpg" style="width:100%"/>
+        </div>  
+        <div class="column">
+          <img src="img/Poster 1.png" style="width:100%"/>
+          <img src="img/Orange Cup.jpg" style="width:100%"/>
+        </div>
+        <div class="column">
+          <img src="img/Utopia.jpg" style="width:100%"/>
+          <img src="img/Poster 2.jpg" style="width:100%"/>
+        </div>
+      </div>
+        <!-- Photo Grid -->
+
+    </div>
+
+      <div id="About" class="tabcontent">
+
       </div>
     </div>
+
+    <!-- Main Content -->
 
     <button onclick="topFunction()" id="goToTopButton" title="Go to top">
       Top
@@ -134,18 +149,7 @@
     <script src="assets/scripts/TabPanel.js"></script>
     <script src="assets/scripts/GoToTopButton.js"></script>
 
-    <!-- <div class="flip-box">
-      <div class="flip-box-inner">
-        <div class="flip-box-front">
-          <h2>Front Side</h2>
-        </div>
-        <div class="flip-box-back">
-          <h2>Back Side</h2>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Footer Section-->
+    <!-- Footer-->
     <footer>
       <div class="bubbles">
         <div
@@ -1411,6 +1415,7 @@
 
 
     </footer>
-    <!-- Footer Section-->
+    <!-- Footer-->
+
   </body>
 </html>
